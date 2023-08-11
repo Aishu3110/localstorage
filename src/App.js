@@ -1,23 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+// import React,{useState,useEffect} from 'react';
+
+// import Parent from './Parent';
+// import Product from './Product';
+// import Arrfile from "./Arrfile";
+// import Task1 from "./data1/Task1";
+import Login from "./Login";
 
 function App() {
+  // const[countdown,setcountdown] = useState(0);
+  // const[interval,setInterval]=useState(0);
+  // useEffect(()=>{
+  //   console.log("hai")
+  // })
+
+  // useEffect(()=>{
+  //   console.log("hello")
+  // },[countdown])
+
+  // useEffect(()=>{
+  //   console.log("aishu")
+  // },[])
+
+  // useEffect(()=>{
+  //   const interval =setInterval(()=>{
+  //     setcountdown(countdown+1)
+  //   },1000);
+  //   return() => clearInterval(interval);
+  // })
+
+  // function timeOut(){
+  //   setTimeout(()=>{
+  //     console.log("timeout seconds")
+  //   },1000)
+  // }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    {/* <div>countdown value:{countdown}</div>
+    <button onClick={()=>timeOut()}>Timeout</button> */}
+<Login/>
     </div>
   );
 }
