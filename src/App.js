@@ -3,8 +3,8 @@
 // import Parent from './Parent';
 // import Product from './Product';
 // import Arrfile from "./Arrfile";
-// import Task1 from "./data1/Task1";
-import Login from "./Login";
+import Task1 from "./data1/Task1";
+// import Login from "./Login";
 
 function App() {
   // const[countdown,setcountdown] = useState(0);
@@ -37,7 +37,7 @@ function App() {
     <div>
     {/* <div>countdown value:{countdown}</div>
     <button onClick={()=>timeOut()}>Timeout</button> */}
-<Login/>
+<Task1/>
     </div>
   );
 }

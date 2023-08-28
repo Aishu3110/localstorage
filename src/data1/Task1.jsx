@@ -5,6 +5,7 @@ const Task1 =() =>{
     console.log(data1)
     return(
         <>
+        <h1>json data in list</h1>
         {data1.map((item)=>{
             return(
                 <ul>
@@ -27,13 +28,19 @@ const Task1 =() =>{
                     <li>latitude :{item.latitude}</li>
                     <li>longitude :{item.longitude}</li>
                     <li>tags :{item.tags}</li>
-                    <li>friends: {item.friends.map}</li>
+                    <li>friends: {item.friends.map((item1)=>{
+                        return(
+                            <ul>
+                                <li>id :{item1.id}</li>
+                                <li>name :{item1.name}</li>
+                            </ul>
+                        )
+                    })}</li>
+                    <li>greeting:{item.greeting}</li>
+                    <li>favoriteFruit: {item.favoriteFruit}</li>
                 </ul>
             )
-        })}
-        
-        
-        
+        })}       
         </>
     )
 };
